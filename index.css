@@ -37,3 +37,10 @@ body {
   right: 0px;
   top: 0px;
 }
+.copyright {
+  font-size: 9px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 30px;
+}
