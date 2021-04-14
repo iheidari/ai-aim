@@ -11,6 +11,7 @@ body {
 .title {
   font-size: 72px;
   font-weight: 500;
+  font-family: "Roboto Mono", monospace;
   color: #333;
   padding: 15px;
   width: fit-content;
