@@ -1,3 +1,6 @@
+document.getElementById("aim").style.left = Math.random() * 88 + "%";
+document.getElementById("aim").style.top = Math.random() * 71 + 13 + "%";
+
 let counter = 10;
 
 const timer = document.getElementById("timer");
