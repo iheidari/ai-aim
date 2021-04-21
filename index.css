@@ -1,4 +1,4 @@
-body {
+* {
   box-sizing: border-box;
 }
 
@@ -15,6 +15,7 @@ body {
   color: #333;
   padding: 15px;
   width: fit-content;
+  width: -moz-fit-content;
 }
 
 .timer {
@@ -38,6 +39,7 @@ body {
   right: 0px;
   top: 0px;
 }
+
 .copyright {
   font-size: 9px;
   position: absolute;

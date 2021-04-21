@@ -1,4 +1,4 @@
-let counter = 60;
+let counter = 30;
 
 const timer = document.getElementById("timer");
 
@@ -22,5 +22,9 @@ var count = (function () {
   };
 })();
 function displaycount() {
-  document.getElementById("carrier").innerHTML = count();
+  let record = count();
+  if (record < 10) {
+    record = "0" + record;
+  }
+  document.getElementById("carrier").innerHTML = record;
 }
