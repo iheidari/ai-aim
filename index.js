@@ -1,4 +1,4 @@
-let counter = 30;
+let counter = 10;
 
 const timer = document.getElementById("timer");
 
@@ -21,10 +21,23 @@ var count = (function () {
     return (counter += 1);
   };
 })();
+
 function displaycount() {
-  let record = count();
-  if (record < 10) {
-    record = "0" + record;
+  // move the aim
+  // x -> 0 - 88
+  // y -> 13 - 84  (0-71)+13
+  if (counter > 0) {
+    const left = Math.random() * 88;
+    const top = Math.random() * 71 + 13;
+
+    document.getElementById("aim").style.left = left + "%";
+    document.getElementById("aim").style.top = top + "%";
+
+    // increase the points
+    let record = count();
+    if (record < 10) {
+      record = "0" + record;
+    }
+    document.getElementById("carrier").innerHTML = record;
   }
-  document.getElementById("carrier").innerHTML = record;
 }
