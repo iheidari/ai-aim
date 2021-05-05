@@ -33,8 +33,14 @@ function displaycount() {
     const left = Math.random() * 88;
     const top = Math.random() * 71 + 13;
 
-    document.getElementById("aim").style.left = left + "%";
-    document.getElementById("aim").style.top = top + "%";
+    const aim = document.getElementById("aim");
+    const size = parseInt(aim.style.width.replace("px", "")) || 100;
+
+    aim.style.left = left + "%";
+    aim.style.top = top + "%";
+
+    aim.style.width = size * 0.9 + "px";
+    aim.style.height = size * 0.9 + "px";
 
     // increase the points
     let record = count();

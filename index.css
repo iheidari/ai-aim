@@ -29,6 +29,8 @@
   width: 100px;
   height: 100px;
   position: absolute;
+  background-image: url("./avatar.png");
+  background-size: 100%;
 }
 
 .points {
