@@ -58,3 +58,33 @@
   width: 100%;
   justify-content: space-between;
 }
+
+.leaderboard {
+  width: 20%;
+  height: 49%;
+  background-color: grey;
+  font-size: 40px;
+  stroke: black;
+  stroke-width: 10px;
+  border-radius: 20%;
+}
+
+.best {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-family: unset;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.name {
+  font-family: fantasy;
+}
+.point {
+  font-family: fantasy;
+}
