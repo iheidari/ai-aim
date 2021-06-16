@@ -18,6 +18,7 @@ const intervlTimer = setInterval(function () {
     clearInterval(intervlTimer);
   }
 }, 1000);
+
 var count = (function () {
   var counter = 0;
   return function () {
@@ -50,3 +51,17 @@ function displaycount() {
     document.getElementById("carrier").innerHTML = record;
   }
 }
+
+function showScores() {
+  const leaderboardDiv = document.getElementById("leaderboard");
+  let html = `<div class="best">Top 5 best scores</div>`;
+  for (let i = 0; i < scores.length; i++) {
+    html += `<div class="row">
+              <div class="name">${scores[i].name}</div>
+              <div class="point">${scores[i].score}</div>
+          </div>`;
+  }
+  leaderboardDiv.innerHTML = html;
+}
+
+showScores();
